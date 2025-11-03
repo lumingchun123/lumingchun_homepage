@@ -1,0 +1,142 @@
+body {
+  font-family: "Noto Sans SC", sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2em 1em;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  object-fit: cover;       /* 关键：按比例裁剪填充 */
+  object-position: center; /* 居中显示 */
+}
+
+nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.work-card {
+  border-bottom: 1px solid #eee;
+  padding: 1em 0;
+}
+
+.work-card:last-child {
+  border-bottom: none;
+}
+
+footer {
+  text-align: center;
+  padding: 3em;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.recent-works {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #f9fafb;
+  border-radius: 10px;
+}
+
+.recent-works h2 {
+  margin-bottom: 1em;
+  border-left: 4px solid #0077cc;
+  padding-left: 0.5em;
+}
+
+.recent-works .work-card {
+  background: #fff;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.recent-works .read-more {
+  color: #0077cc;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.recent-works .read-more:hover {
+  text-decoration: underline;
+}
+
+.more-link {
+  text-align: right;
+  margin-top: 1em;
+}
+
+.more-link a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#latest-works {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  padding: 1em;
+}
+
+.work-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5em;
+  transition: transform 0.2s ease;
+  word-break: break-word;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.toggle-btn {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.3em 0.6em;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #005fa3;
+}
+
