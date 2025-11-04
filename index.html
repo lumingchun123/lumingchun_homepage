@@ -7,33 +7,33 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
   <style>
-  /* 粒子背景层：固定在底部，不遮挡内容 */
+
   #tsparticles {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* 👈 关键：让它在最下面 */
+    z-index: -1; 
   }
 
-  /* 页面主要内容：浮在上面 */
+
   header, main {
     position: relative;
-    z-index: 1; /* 👈 关键：高于粒子背景 */
-    color: black; /* 如果背景深色，这样文字更清晰 */
+    z-index: 1; 
+    color: black; 
   }
 
   footer {
      position: relative;
-    z-index: 1; /* 👈 关键：高于粒子背景 */
-    color: white; /* 如果背景深色，这样文字更清晰 */
+    z-index: 1; 
+    color: white; 
   }
 
   body {
     margin: 0;
     font-family: sans-serif;
-    background: #0f2027; /* 备用纯色背景 */
+    background: #0f2027; 
   }
   </style>
 </head>
