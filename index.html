@@ -5,8 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mingchun Lu's website.</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <style>
+  /* 粒子背景层：固定在底部，不遮挡内容 */
+  #tsparticles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 👈 关键：让它在最下面 */
+  }
+
+  /* 页面主要内容：浮在上面 */
+  header, main {
+    position: relative;
+    z-index: 1; /* 👈 关键：高于粒子背景 */
+    color: black; /* 如果背景深色，这样文字更清晰 */
+  }
+
+  footer {
+     position: relative;
+    z-index: 1; /* 👈 关键：高于粒子背景 */
+    color: white; /* 如果背景深色，这样文字更清晰 */
+  }
+
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #0f2027; /* 备用纯色背景 */
+  }
+  </style>
 </head>
 <body>
+  <div id="tsparticles"></div>
+  <script>
+tsParticles.load("tsparticles", {
+  background: { color: "#0f2027" },
+  particles: {
+    number: { value: 50 },
+    color: { value: ["#00bcd4", "#ff4081", "#ffffff"] },
+    move: { enable: true, speed: 2 },
+    shape: { type: "star" },
+    opacity: { value: 0.6 },
+    size: { value: 3 },
+
+  },
+  interactivity: {
+    events: { onHover: { enable: true, mode: "bubble" } },
+    modes: { bubble: { size: 8, distance: 100 } }
+  }
+});
+</script>
   <header>
     <img src="images/avatar.jpg" alt="头像" class="avatar"> 
     <h1>Hi there, this is Mingchun Lu（路茗淳）.</h1>
