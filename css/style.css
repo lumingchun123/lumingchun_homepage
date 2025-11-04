@@ -18,8 +18,8 @@ header .avatar {
   height: 120px;
   border-radius: 50%;
   margin-bottom: 1em;
-  object-fit: cover;       /* 关键：按比例裁剪填充 */
-  object-position: center; /* 居中显示 */
+  object-fit: cover;       
+  object-position: center; 
 }
 
 nav a {
